@@ -12,9 +12,9 @@ body {
 
 menu {
     padding-left:0;
-    margin-top: -5%;
+    margin-top: 0;
     position: fixed;
-    height: 86.5%;
+    height: 82%;
     width: 15.4%;
     left: 0;
     border: 1px solid black;
@@ -70,8 +70,11 @@ a{
     overflow: hidden;
 } */
 
-img{
-    float: left;
+header img{
+    margin-top: 10px;
+    width: 200px;
+    position: absolute;
+    left: 0;
 }
 header{
     position:fixed;
@@ -80,7 +83,7 @@ header{
     padding-left: 15.5%;
     display: block;
     text-align: center;
-    background: #5ab9ea ;
+    background: #f0a500 ;
     z-index: 0;
     
 }
@@ -129,7 +132,7 @@ header nav li a:active{
 }
 
 main{
-    margin-top: 154px;
+    margin-top: 120px;
     margin-left: 19%;
     overflow: hidden;
 }
@@ -177,6 +180,19 @@ a .product-details:active{
 .product-details button:active{
     background-color: #c1c8e4;
 } 
+
+.btn{
+    text-align: center;
+    padding:5px 5%;
+    background: none;
+    border: 1px solid #5ab9ea;
+    margin: 10px 40%;
+    color: #5680e9;
+}
+.btn:hover,
+.btn:active{
+    background-color: #c1c8e4;
+}
 
 footer{
     background-color: #8860d0;
