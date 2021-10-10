@@ -96,6 +96,7 @@ header h1{
 }
 header nav ul{
     margin-bottom: 1px;
+    margin-right: 10px;
 }
 
 header nav li{
@@ -110,25 +111,14 @@ header nav li a{
 }
 header nav li a:hover,
 header nav li a:active{
-    background-color: #2baff1;
+    background-color: #ffae00;
     border: 1px solid #5f7efc;
     box-shadow: 0px 3px 10px 1px #356983;
 }
 
 
-.search-box input{
-    padding:0;
-    width: 200px;
-    height:20px;
-    border-radius: 20px;
-    padding-left: 10px;
-}
-.search-box button{
-    height:25px;
-    width: 50px;
-}
 .icon-cart{
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 main{
@@ -136,6 +126,23 @@ main{
     margin-left: 19%;
     overflow: hidden;
 }
+
+.search-box{
+    margin-left: 20%;
+}
+
+.search-box input{
+    padding:0;
+    width: 50%;
+    height:30px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.search-box button{
+    height:30px;
+    width: 80px;
+}
+
 .product-details{
     margin: 2px 2px;
     width:23.6%;
@@ -195,7 +202,7 @@ a .product-details:active{
 }
 
 footer{
-    background-color: #8860d0;
+    background-color: #9d8d8f;
     border: 1px solid black;
     position: relative;
     bottom: 0;
