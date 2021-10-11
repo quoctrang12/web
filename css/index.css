@@ -17,6 +17,7 @@ menu {
     height: 82%;
     width: 15.4%;
     left: 0;
+    top: 100px;
     border: 1px solid black;
     overflow: auto;
     background-color: white;
@@ -41,8 +42,8 @@ menu .main-menu{
     transition: all 1s;
 }
 .main-menu h4{
-    margin-top:5px;
-    margin-bottom: 5px;
+    margin-top:15px;
+    margin-bottom: 10px;
 }
 
 .sub-menu{
@@ -55,6 +56,7 @@ menu .main-menu{
     float: right;
     padding-right: 10px;
     font-size: 12px;
+    cursor: pointer;
 }
 
 
@@ -95,7 +97,8 @@ header h1{
     color: white;
 }
 header nav ul{
-    margin-bottom: 1px;
+    margin-bottom: 3px;
+    margin-top:3px;
     margin-right: 10px;
 }
 
@@ -117,30 +120,36 @@ header nav li a:active{
 }
 
 
-.icon-cart{
+.icon{
     font-size: 1.2em;
 }
 
 main{
-    margin-top: 120px;
+    margin-top: 130px;
     margin-left: 19%;
     overflow: hidden;
 }
 
 .search-box{
     margin-left: 20%;
+    margin-bottom: 10px;
 }
 
 .search-box input{
     padding:0;
+    float: left;
     width: 50%;
-    height:30px;
-    border-radius: 5px;
+    height:40px;
     padding-left: 5px;
+    border:0;
 }
 .search-box button{
-    height:30px;
-    width: 80px;
+    height:40px;
+    width: 10%;
+    float:left;
+    border: 1px solid #5ab9ea;
+    border-left: 0;
+    cursor: pointer;
 }
 
 .product-details{
@@ -149,11 +158,25 @@ main{
     background-color: white;
     border: 1px solid black;
     transition: all .3s;
+    height: 390px;
 }
 a .product-details:hover,
 a .product-details:active{
     box-shadow: 0px 5px 15px 5px rgba(80, 79, 79, 0.815);
 }
+
+.group-title{
+    margin-bottom: 5px;
+    margin-right: 50px;
+    
+}
+
+.group-title a{
+    float: right;
+    font-size: 16px;
+    color: #5680e9;
+}
+
 .product-details img{
     width: 80%;
     height: 200px;
@@ -164,14 +187,31 @@ a .product-details:active{
     display: inline;
 }
 .product-details h4{
-    display: inline;
     margin-left: 10px;
+    font-size: 18px;
 }
+
 .product-details p{
     color: rgb(161, 1, 1);
     margin-left: 10px;
+    margin-bottom: 10px;
+    display: inline;
 }
 
+.price{
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.price span{
+    text-decoration: line-through;
+    color: rgba(0,0,0,0.5);
+}
+.price label{
+    background-color: red;
+    color: white;
+    padding:2px;
+    border-radius: 5px;
+}
 
 .product-details button{
     width: 70%;
