@@ -1,6 +1,8 @@
+//jquery
 $(document).ready(
+// menu sản phẩm sổ xuống
     $('.icon-sub-menu').click(
-        function(event){
+        function(){
             $('.sub-menu').slideToggle(200);
 
             if($('.icon-sub-menu').hasClass('fa-chevron-down')){
@@ -10,11 +12,31 @@ $(document).ready(
                 $('.icon-sub-menu').addClass('fa-chevron-down');
                 $('.icon-sub-menu').removeClass('fa-chevron-up');
             }
-        }   
-    )
-    
+        }
+    ),
+// Xem thêm sản phẩm
+    $('.add-product').click(function() {
+        $('.ex').slideToggle(200);
+        if ($('.add-product').text() === 'Xem thêm') {
+            $('.add-product').text("Ẩn bớt");
+        }else{
+            $('.add-product').text("Xem thêm");
+        }
+        
+
+    }),
+    $('.menu-hover').click(function(){
+        $("menu").slideToggle(200);
+    }),
+    $('.menu-title').click(function(){
+        $("menu").slideToggle(200);
+    })
+
+
 )
 
+//javascript
+// Thu phóng ảnh trong chi tiết sản phẩm 
 tabs = ()=>{
     var items = document.querySelectorAll(".item");
     var contents = document.querySelectorAll(".img-main");
